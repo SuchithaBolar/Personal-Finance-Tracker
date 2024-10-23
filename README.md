@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Personal Finance Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Personal Finance Tracker is a web application developed to help users effectively manage and track their finances. It allows users to monitor their income and expenses, offering insights into their financial well-being. With a user-friendly interface, secure authentication, and robust tools for transaction tracking, sorting, and analysis, it provides an all-in-one solution for personal financial management.
 
-## Available Scripts
+# Table of Contents
 
-In the project directory, you can run:
+Demo
+Features
+Technologies Used
+Installation
+Usage
+Backend Setup
+Assumptions & Limitations
 
-### `npm start`
+# Demo
+You can view the live demo of the Personal Finance Tracker here.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Features
+User Authentication
+Sign Up: New users can create an account using their email and password. All authentication is handled securely via Firebase Authentication.
+Login: Returning users can log in to access their personalized dashboard and manage their financial data.
+Logout: Users can safely log out, ensuring their sensitive data remains protected.
+Dashboard Overview
+Summary of Financial Health: The dashboard displays the user's total income, total expenses, and net balance, giving an instant overview of their financial status.
+Visual Representation: A bar chart provides a clear visualization of income and expenses over time, allowing users to identify spending trends and patterns.
+Transaction Management
+Add Transactions: Users can easily log transactions by specifying the amount, type (income or expense), date, category (e.g., Rent, Salary, Groceries, Utilities, etc.), and a description for additional context.
+Edit Transactions: Transactions can be edited at any time to correct or update details such as amount, category, or date.
+Delete Transactions: Unnecessary transactions can be removed, keeping the transaction list up-to-date and organized.
+Transaction List
+Detailed Transaction History: A comprehensive list of all transactions is available, including key details such as amount, type, category, and date.
+Sort Options: Transactions can be sorted by date or by type (income/expense) to allow users to quickly find specific entries.
+Filter Options: Users can filter the transaction list by categories (e.g., Rent, Groceries, etc.) for easier analysis of specific spending areas.
+Data Security
+User-Specific Data: All financial data is securely stored in Firebase Firestore, with access limited to authenticated users. Data privacy is a top priority.
+Responsive Design
+The application is fully responsive, ensuring it looks and works great on desktops, tablets, and smartphones.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Technologies Used
+Frontend: React.js, HTML, CSS, JavaScript
+Backend: Node.js, Express.js
+Database: Firebase Firestore for real-time, user-specific data storage
+Authentication: Firebase Authentication for secure user login and management
+Hosting: Firebase Hosting for deployment
 
-### `npm test`
+# Installation
+Follow these steps to install and run the project locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the repository:
 
-### `npm run build`
+bash
+Copy code
+git clone https://github.com/SuchithaBolar/Personal-Finance-Tracker.git
+Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+cd personal-finance-tracker
+Install the required dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Usage
+To start the development server, run:
 
-### `npm run eject`
+bash
+Copy code
+npm start
+This will start the app in development mode. Open http://localhost:3000 in your browser to view the app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run tests, use:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+npm test
+For building the project for production, run:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy code
+npm run build
+The production-ready build will be generated in the build folder.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Backend Setup
+To set up the backend:
 
-## Learn More
+Navigate to the backend directory:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+Copy code
+cd backend
+Install the backend dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
+Copy code
+npm install
+Run the backend server:
 
-### Code Splitting
+bash
+Copy code
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Assumptions & Limitations
+This app is designed for individuals looking for an easy-to-use personal finance management solution.
+Security for sensitive data is handled by Firebase Authentication and Firestore; however, users handling highly sensitive financial data may need to implement additional security measures.
+The current feature set covers common financial management tasks; advanced or unique use cases may require further development.
