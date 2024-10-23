@@ -1,107 +1,99 @@
 # Personal Finance Tracker
 
-The Personal Finance Tracker is a web application developed to help users effectively manage and track their finances. It allows users to monitor their income and expenses, offering insights into their financial well-being. With a user-friendly interface, secure authentication, and robust tools for transaction tracking, sorting, and analysis, it provides an all-in-one solution for personal financial management.
+The Personal Finance Tracker is a web application designed to help users manage their personal finances efficiently. By tracking income and expenses, users can gain better insights into their financial health. The application features a user-friendly interface, secure authentication, and powerful tools for sorting and analyzing financial data.
 
-# Table of Contents
+## Table of Contents
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Backend Setup](#backend-setup)
 
-Demo
-Features
-Technologies Used
-Installation
-Usage
-Backend Setup
-Assumptions & Limitations
+## Demo
+Check out the live demo of the Personal Finance Tracker [here](#).
 
-# Demo
-You can view the live demo of the Personal Finance Tracker here.
+## Features
+### User Authentication
+- **Sign Up**: New users can easily sign up for an account using their email and password. User authentication is securely handled through Firebase Authentication.
+- **Login**: Existing users can log in to access their personal financial data. Once logged in, users will be directed to their personal dashboard.
+- **Logout**: Users can securely log out of their accounts, ensuring that their financial data remains private.
 
-# Features
-User Authentication
-Sign Up: New users can create an account using their email and password. All authentication is handled securely via Firebase Authentication.
-Login: Returning users can log in to access their personalized dashboard and manage their financial data.
-Logout: Users can safely log out, ensuring their sensitive data remains protected.
-Dashboard Overview
-Summary of Financial Health: The dashboard displays the user's total income, total expenses, and net balance, giving an instant overview of their financial status.
-Visual Representation: A bar chart provides a clear visualization of income and expenses over time, allowing users to identify spending trends and patterns.
-Transaction Management
-Add Transactions: Users can easily log transactions by specifying the amount, type (income or expense), date, category (e.g., Rent, Salary, Groceries, Utilities, etc.), and a description for additional context.
-Edit Transactions: Transactions can be edited at any time to correct or update details such as amount, category, or date.
-Delete Transactions: Unnecessary transactions can be removed, keeping the transaction list up-to-date and organized.
-Transaction List
-Detailed Transaction History: A comprehensive list of all transactions is available, including key details such as amount, type, category, and date.
-Sort Options: Transactions can be sorted by date or by type (income/expense) to allow users to quickly find specific entries.
-Filter Options: Users can filter the transaction list by categories (e.g., Rent, Groceries, etc.) for easier analysis of specific spending areas.
-Data Security
-User-Specific Data: All financial data is securely stored in Firebase Firestore, with access limited to authenticated users. Data privacy is a top priority.
-Responsive Design
-The application is fully responsive, ensuring it looks and works great on desktops, tablets, and smartphones.
+### Dashboard Overview
+- **Total Income, Expenses, and Net Balance**: The dashboard provides a quick summary of the user's financial health, displaying total income, total expenses, and the net balance (total income minus total expenses).
+- **Bar Graph Visualization**: A bar graph is included on the dashboard to visualize income and expenses over a specified period. This helps users understand their spending and earning patterns easily.
 
-# Technologies Used
-Frontend: React.js, HTML, CSS, JavaScript
-Backend: Node.js, Express.js
-Database: Firebase Firestore for real-time, user-specific data storage
-Authentication: Firebase Authentication for secure user login and management
-Hosting: Firebase Hosting for deployment
+### Transaction Management
+- **Add Transactions**: Users can add new transactions by specifying the amount, type (income or expense), date, and category (e.g., Groceries, Rent, Salary, Utilities, Others). A brief description can also be added for more context.
+- **Edit Transactions**: Users can edit existing transactions to update the amount, type, date, category, and description if needed.
+- **Delete Transactions**: Users can delete transactions that are no longer necessary, keeping their transaction list organized and relevant.
 
-# Installation
-Follow these steps to install and run the project locally:
+### Transaction List
+- **Comprehensive Transaction List**: Users can view a list of all their financial transactions, complete with details such as the amount, type, date, category, and description.
+- **Sorting Options**: The transaction list can be sorted by various criteria, including the date of the transaction and type (income or expense).
+- **Filtering Options**: Users can filter the transaction list based on categories like Groceries, Rent, Salary, Utilities, and Others, aiding in better analysis of spending habits.
 
-Clone the repository:
+### Data Security
+- **User-Specific Data**: Each user's data is securely stored in Firebase Firestore, ensuring that only the authenticated user can access and manage their financial information.
 
-bash
-Copy code
-git clone https://github.com/SuchithaBolar/Personal-Finance-Tracker.git
-Navigate to the project directory:
+### Responsive Design
+The application is designed to be fully responsive, providing an optimal viewing experience across different devices, including desktops, tablets, and smartphones.
 
-bash
-Copy code
-cd personal-finance-tracker
-Install the required dependencies:
+## Technologies Used
+- **Frontend**: React.js, HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: Firebase Firestore for storing user-specific transaction data
+- **Authentication**: Firebase Authentication for secure user account management
+- **Hosting**: Firebase Hosting for deploying the application
 
-bash
-Copy code
-npm install
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Sinchana-A-J/financial-tracker.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd financial-tracker
+    ```
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-# Usage
-To start the development server, run:
+## Usage
+1. Start the development server:
+    ```bash
+    npm start
+    ```
+   This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-bash
-Copy code
-npm start
-This will start the app in development mode. Open http://localhost:3000 in your browser to view the app.
+2. Run the tests:
+    ```bash
+    npm test
+    ```
+   This launches the test runner in interactive watch mode.
 
-To run tests, use:
+3. Build for production:
+    ```bash
+    npm run build
+    ```
+   This will create a production-ready build of the application in the `build` folder.
 
-bash
-Copy code
-npm test
-For building the project for production, run:
+## Backend Setup
+1. Navigate to the backend directory:
+    ```bash
+    cd backend
+    ```
+2. Install backend dependencies:
+    ```bash
+    npm install
+    ```
+3. Run the backend server:
+    ```bash
+    npm start
+    ```
 
-bash
-Copy code
-npm run build
-The production-ready build will be generated in the build folder.
-
-# Backend Setup
-To set up the backend:
-
-Navigate to the backend directory:
-
-bash
-Copy code
-cd backend
-Install the backend dependencies:
-
-bash
-Copy code
-npm install
-Run the backend server:
-
-bash
-Copy code
-npm start
-
-# Assumptions & Limitations
-This app is designed for individuals looking for an easy-to-use personal finance management solution.
-Security for sensitive data is handled by Firebase Authentication and Firestore; however, users handling highly sensitive financial data may need to implement additional security measures.
-The current feature set covers common financial management tasks; advanced or unique use cases may require further development.
+## Assumptions & Limitations
+- The application is designed for personal finance management and aims to be intuitive for users with basic financial literacy.
+- Data security is managed using Firebase Authentication and Firestore, but additional security measures may be required for handling highly sensitive data.
+- The application focuses on common financial management scenarios; specific or advanced use cases may need further customization.
