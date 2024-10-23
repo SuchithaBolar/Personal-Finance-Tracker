@@ -49,7 +49,7 @@ The application is designed to be fully responsive, providing an optimal viewing
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Sinchana-A-J/financial-tracker.git
+    git clone [https://github.com/SuchithaBolar/Personal-Finance-Tracker.git]
     ```
 2. Navigate to the project directory:
     ```bash
