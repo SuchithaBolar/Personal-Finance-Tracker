@@ -1,0 +1,70 @@
+
+.manage-transactions {
+  margin-top: 80px;
+}
+
+
+.manage-transactions-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif; 
+  margin-bottom: 20px;
+}
+
+
+.table {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.action-button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px; 
+  font-size: 14px;
+  color: #333;
+}
+
+.action-button:hover {
+  background-color: #f0f0f0; 
+  color: #ff0d00; 
+}
+
+.action-button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .manage-transactions-title {
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+
+  .table th, .table td {
+      font-size: 12px;
+      padding: 8px;
+  }
+
+  .action-button {
+      padding: 5px;
+      font-size: 12px;
+      margin: 2px 0;
+      width: 100%;
+      justify-content: center;
+  }
+
+  td > .action-button {
+      margin: 5px 0;
+      display: block;
+      text-align: center;
+  }
+}
